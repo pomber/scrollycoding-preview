@@ -10,6 +10,12 @@ import {
   withFocusHandler,
 } from '@code-hike/scrollycoding'
 
+const classes = {
+  'ch-hike-step-unfocused': 'opacity-25 transition-opacity',
+  'ch-hike-step-content': 'border-none',
+  'ch-frame-button': 'bg-gray-300 border-gray-600',
+}
+
 function Hike({ children, previewProps, codeProps, ...props }) {
   const steps = useMdxSteps(
     children,
@@ -28,7 +34,7 @@ function Hike({ children, previewProps, codeProps, ...props }) {
       minColumns: 40,
     }
   )
-  return <HikeSteps steps={steps} {...props} />
+  return <HikeSteps steps={steps} {...props} classes={classes} />
 }
 
 export const components = {
