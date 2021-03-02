@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@code-hike/scrollycoding": "0.0.0-6a4ea1c",
     "classnames": "2.2.6",
     "date-fns": "2.16.1",
     "gray-matter": "4.0.2",
