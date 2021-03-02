@@ -1,0 +1,23 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.max-w-screen-870 {
+  max-width: 870px;
+}
