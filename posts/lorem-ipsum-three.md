@@ -49,7 +49,7 @@ Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidu
 
 Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
-<StepHead>
+<StepHead focus="20">
 
 ```jsx
 import {
@@ -85,7 +85,7 @@ Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidu
 
 Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
-<StepHead>
+<StepHead focus="17:22">
 
 ```jsx
 import { NaturalCurve } from 'react-svg-curve'
