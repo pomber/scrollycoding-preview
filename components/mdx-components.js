@@ -11,10 +11,23 @@ import {
 } from '@code-hike/scrollycoding'
 
 function Hike({ children, previewProps, codeProps, ...props }) {
-  const steps = useMdxSteps(children, previewProps, {
-    ...codeProps,
-    minColumns: 40,
-  })
+  const steps = useMdxSteps(
+    children,
+    {
+      ...previewProps,
+      preset: {
+        customSetup: {
+          dependencies: {
+            'react-svg-curve': '0.2.0',
+          },
+        },
+      },
+    },
+    {
+      ...codeProps,
+      minColumns: 40,
+    }
+  )
   return <HikeSteps steps={steps} {...props} />
 }
 
