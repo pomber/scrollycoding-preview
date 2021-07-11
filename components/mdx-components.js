@@ -5,32 +5,39 @@ import {
   Focus,
   CodeSlot,
   PreviewSlot,
-  useMdxSteps,
   StepHead,
   withFocusHandler,
 } from '@code-hike/scrollycoding'
 
 const classes = {
-  "ch-hike-step-content-unfocused": 'opacity-25 transition-opacity',
+  'ch-hike-step-content-unfocused': 'opacity-25 transition-opacity',
   'ch-hike-step-content': 'border-none',
   'ch-frame-button': 'bg-gray-300 border-gray-600',
 }
 
-function Hike({ children, previewProps, codeProps, ...props }) {
-  const steps = useMdxSteps(children, {
-    ...previewProps,
-    preset: {
-      customSetup: {
-        dependencies: {
-          "react-svg-curve": "0.2.0"
-        }
-      }
-    }
-  }, {
-    ...codeProps,
-    minColumns: 40,
-  })
-  return <HikeSteps steps={steps} {...props} classes={classes} />
+const preset = {
+  template: 'react',
+  customSetup: {
+    dependencies: {
+      'react-svg-curve': '0.2.0',
+    },
+  },
+}
+
+function Hike(props) {
+  const editorProps = {
+    codeProps: { minColumns: 40 },
+    ...props.editorProps,
+  }
+
+  return (
+    <HikeSteps
+      classes={classes}
+      preset={preset}
+      {...props}
+      editorProps={editorProps}
+    />
+  )
 }
 
 export const components = {
